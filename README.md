@@ -28,7 +28,7 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-<!-- **Hoisting is when a JS declaration is lifted ("hoisted") to the top of it's scope by the JS interpreter. ** -->
+**Hoisting is when a JS declaration is lifted ("hoisted") to the top of it's scope by the JS interpreter. **
 
 
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
