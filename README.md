@@ -28,10 +28,18 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
-1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
+<!-- **Hoisting is when a JS declaration is lifted ("hoisted") to the top of it's scope by the JS interpreter. ** -->
 
-  **Student answer: **
+
+1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
+ 
+  A function that is passed to another function. To know that the first function worked! Like my example.
+
+$("#button").click(function() {
+  console.log("Hello World!")
+});
+
+<!-- ************************* -->
 
 ## Functions and operators
 
@@ -60,7 +68,7 @@ http-server
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
-  **Student answer:**
+  **POST, GET, PUT, and DELETE:**
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
@@ -72,7 +80,7 @@ http-server
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+It logs 42 because the function is called in the global scope. So this.answer = "42" because 'this' is the global scope and answer = "42" in the global scope.
 
 ```
 var answer = "42";
