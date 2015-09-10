@@ -71,10 +71,26 @@ $("#button").click(function() {
   **POST, GET, PUT, and DELETE:**
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer:**
+  
+
+  **Student answer:**  A promise will wait until the asynchronous XHR call has been made and received a response or an error. If a promise is called in a function, the function will not execute until the promise returns a response.
 
 1. Provide a simple example of the syntax for handling a Promise.
-  **Student answer:**
+  
+
+  **function promise() {
+  var deferred = Q.defer();
+
+  $.ajax({
+    url: 'data.json'
+  }).done(function(data) {
+    deferred.resolve(data);
+  }).error(function(error) {
+    deferred.reject(error);
+  });
+
+  return deferred.promise;
+}**
 
 ## Scope and this
 
